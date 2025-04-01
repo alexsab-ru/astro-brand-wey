@@ -1,7 +1,7 @@
 import { phoneFormat } from '@/js/utils/numbers.format';
 import { LAST_DAY, MONTH, YEAR } from '@/js/utils/date';
 // Название сайта по умолчанию
-export const SITE_NAME = 'Название сайта';
+export const SITE_NAME = 'WEY';
 // Юр лицо
 export const LEGAL_ENTITY = 'ООО «Юридическое название»';
 // ИНН
