@@ -70,26 +70,26 @@ import socials from '@/data/socials.json';
 						/>
 						<a
 							href="#common-modal"
-							class="lg:hidden popup-link bg-white/90 shadow-md rounded flex items-center justify-center w-8 sm:w-10 h-8 sm:h-10 transition-shadow hover:shadow"
+							class="lg:hidden popup-link rounded flex items-center justify-center w-8 sm:w-10 h-8 sm:h-10"
 							aria-label="Заказать звонок"
 							title="Заказать звонок"
 							data-title="Заказать звонок"
 							data-form_name="Заказ звонка. Шапка"
 						>
-							<Icon name="mdi:phone-incoming" class="text-3xl" />
+							<Icon name="mdi:phone-incoming" class="text-3xl text-white" />
 						</a>
 						{Object.keys(socials.footer).length ? (
 							<SocialList data={socials.footer} />
 					  	) : ('')}
 					</div>
 					<button
-						class="lg:hidden shadow-md bg-white/90 rounded flex items-center justify-center w-8 sm:w-10 h-8 sm:h-10 transition-shadow hover:shadow shrink-0"
+						class="lg:hidden rounded flex items-center justify-center w-8 sm:w-10 h-8 sm:h-10 shrink-0"
 						id="mobile-menu" 
 						title="Mobile menu"
 						aria-label="Mobile menu"
 						@click.prevent="open = !open"
 					>
-						<Icon name="mdi:hamburger-menu" class="text-2xl" />
+						<Icon name="mdi:hamburger-menu" class="text-2xl text-white" />
 					</button>
 				</div>
 			</div>
