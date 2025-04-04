@@ -1,7 +1,7 @@
 import { phoneFormat } from '@/js/utils/numbers.format';
 import { LAST_DAY, MONTH, YEAR } from '@/js/utils/date';
 // Название сайта по умолчанию
-export const SITE_NAME = 'Название сайта';
+export const SITE_NAME = 'Дилер';
 // Юр лицо
 export const LEGAL_ENTITY = 'ООО «Юридическое название»';
 // ИНН
@@ -15,7 +15,7 @@ export const SITE_DESCR = 'Официальный дилерский центр'
 // Телефон по умолчанию
 export const PHONE = '+7 (999) 000-00-00';
 // Бренд
-export const BRAND = 'BRAND';
+export const BRAND = 'WEY';
 // Конечное время для таймера
 //string 2025-12-31T23:59:59+04:00
 export const TIMER = { title: 'До конца акции осталось',subtitle: '', endtime: `${YEAR}-${MONTH}-${LAST_DAY}T23:59:59+04:00`, btnName: 'Зафиксировать цену', show: false };
@@ -39,7 +39,7 @@ export const LINKS_MENU = [
 	},
 	// {url: 'trade-in/', name: 'Оценка автомобиля'},
 	{url: 'special-offers/', name: 'Спецпредложения'},
-	{url: 'news/', name: 'Новости'},
+	// {url: 'news/', name: 'Новости'},
 	{url: 'test-drive/', name: 'Запись на тест-драйв'},
 	{url: 'service-request/', name: 'Запись на сервис'},
 	{url: '#services', name: 'Услуги'},
@@ -47,7 +47,7 @@ export const LINKS_MENU = [
 ];
 // Коллекции
 export const COLLECTIONS = [
-	// {name: 'special-offers', title: 'Спецпредложения'},
+	{name: 'special-offers', title: 'Спецпредложения'},
 	// {name: 'news', title: 'Новости'},
 ];
 // Текстовая строка над хедером
