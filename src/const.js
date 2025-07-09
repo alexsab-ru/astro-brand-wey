@@ -36,6 +36,7 @@ export const LINKS_MENU = [
 		{url: 'special-offers/', name: 'Спецпредложения'},
 		{url: 'service-request/', name: 'Запись на сервис'},
 		{url: 'road-assistance/', name: 'Помощь на дороге'},
+		{url: 'warranty/', name: 'Гарантия'},
 	]},
 	{url: '#services', name: 'Услуги'},
 	{url: 'about/', name: 'О бренде'},
