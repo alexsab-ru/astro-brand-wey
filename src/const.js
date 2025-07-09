@@ -27,10 +27,16 @@ export const LINKS_MENU = [
 		children
 	},
 	// {url: 'trade-in/', name: 'Оценка автомобиля'},
-	{url: 'special-offers/', name: 'Спецпредложения'},
 	// {url: 'news/', name: 'Новости'},
-	{url: 'test-drive/', name: 'Запись на тест-драйв'},
-	{url: 'service-request/', name: 'Запись на сервис'},
+	{url: 'javascript:void(0)', name: 'Покупателям', children: [
+		{url: 'special-offers/', name: 'Спецпредложения'},
+		{url: 'test-drive/', name: 'Запись на тест-драйв'},
+	]},
+	{url: 'javascript:void(0)', name: 'Владельцам', children: [
+		{url: 'special-offers/', name: 'Спецпредложения'},
+		{url: 'service-request/', name: 'Запись на сервис'},
+		{url: 'road-assistance/', name: 'Помощь на дороге'},
+	]},
 	{url: '#services', name: 'Услуги'},
 	{url: 'about/', name: 'О бренде'},
 	{url: 'contacts/', name: 'Контакты'},
