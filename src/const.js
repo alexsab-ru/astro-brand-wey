@@ -38,6 +38,7 @@ export const LINKS_MENU = [
 		{url: 'service-request/', name: 'Запись на сервис'},
 		{url: 'road-assistance/', name: 'Помощь на дороге'},
 		{url: 'warranty/', name: 'Гарантия'},
+		{url: 'remote-control/', name: 'Удаленное управление'},
 		{url: 'manuals/', name: 'Руководства по эксплуатации'},
 	]},
 	{url: '#services', name: 'Услуги'},
