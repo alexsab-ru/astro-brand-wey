@@ -38,7 +38,7 @@ const links = [
 		{links.map(link => (
 			<div class="flex flex-col gap-5">
 				<div class="relative flex-grow">
-					<img src={link.image_url} class="h-full w-full object-cover md:w-auto" alt={link.name} />
+					<img src={link.image_url} class="h-full w-full object-cover md:w-auto" alt={link.name} width="485" height="480"/>
 					<h3 class="font-semibold uppercase text-white absolute bottom-4 left-6 !mb-0">{link.name}</h3>
 				</div>
 				<a href={link.price_list_link} class="btn btn-o w-full !m-0" target="_blank">Прайс-лист</a>
