@@ -40,7 +40,10 @@ export const LINKS_MENU = [
 		{url: 'manuals/', name: 'Руководства по эксплуатации'},
 	]},
 	{url: '#services', name: 'Услуги'},
-	{url: 'about/', name: 'О бренде'},
+	{url: 'javascript:void(0)', name: 'WEY WORLD', children: [
+		{url: 'about/', name: 'О бренде'},		
+		{url: 'support/', name: 'Поддержка'},	
+	]},
 	{url: 'contacts/', name: 'Контакты'},
 ];
 
