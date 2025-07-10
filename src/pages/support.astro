@@ -8,7 +8,6 @@ import Faq from '@/components/Faq/Index.astro';
 const { brand, legal_city_where } = settings;
 const { models } = modelsData;
 const modelLinks = models.filter(model => model.show).map(m => (`<a href=\"/models/${m.id}/\" class=\"underline text-accent-500 uppercase whitespace-nowrap\">${m.mark_id} ${m.name}</a>`));
-console.log(modelLinks);
 
 const banner = {
 	"show": true,
@@ -34,13 +33,13 @@ const items1 = [
 	{
         "id": 3,
         "question": "Где я могу ознакомиться со стоимостью автомобиля?",
-        "answer": `Ознакомиться со стоимостью автомобиля по ссылкам <br/>[${modelLinks.join(', ')}]`,
+        "answer": `Ознакомиться со стоимостью автомобиля по ссылкам <br/>(${modelLinks.join(', ')})`,
         "open": false
     },
 	{
         "id": 4,
         "question": "Где я могу узнать технические характеристики автомобиля?",
-        "answer": `С полными техническими характеристиками автомобиля можно ознакомиться по ссылкам <br/>[${modelLinks.join(', ')}]`,
+        "answer": `С полными техническими характеристиками автомобиля можно ознакомиться по ссылкам <br/>(${modelLinks.join(', ')})`,
         "open": false
     },
 	{
