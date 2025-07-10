@@ -31,6 +31,7 @@ export const LINKS_MENU = [
 	{url: 'javascript:void(0)', name: 'Покупателям', children: [
 		{url: 'special-offers/', name: 'Спецпредложения'},
 		{url: 'test-drive/', name: 'Запись на тест-драйв'},
+		{url: 'price-lists-catalogues/', name: 'Прайс-листы и каталоги'},
 	]},
 	{url: 'javascript:void(0)', name: 'Владельцам', children: [
 		{url: 'special-offers/', name: 'Спецпредложения'},
