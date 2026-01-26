@@ -587,11 +587,11 @@ const items6 = [
                 }
             }">
 
-                <div class="mt-10 grid grid-cols-2 gap-4 md:grid-cols-5">
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-5">
                     <template x-for="func in functions">
                         <button 
                             type="button"
-                            class="cursor-pointer rounded-lg p-4 text-center transition-all duration-300"
+                            class="cursor-pointer rounded-lg p-4 text-center transition-all duration-300 text-sm lg:text-base"
                             x-bind:class="tabActive === func.id ? 'bg-accent-500 text-white' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'"
                             x-on:click="tabActive = func.id; scroll()"
                         >
@@ -723,6 +723,147 @@ const items6 = [
                                 class="absolute left-[15px] top-[12px] h-[587.52px] w-[272.7px] rounded-[20px] object-cover"
                             >
                                 <source src="https://gwm-wey.ru/uploads/blocks/16f458d95cb6d107f2446ee5c0865c3d.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="text-center">Функции мониторинга</h2>
+
+            <div x-data="{
+                functions: [
+                    {id: 'common-info', name: 'Основная информация о состоянии автомобиля'},
+                    {id: 'lock-status', name: 'Статус центрального замка'},
+                    {id: 'car-placement', name: 'Местоположение автомобиля'},
+                    {id: 'geozone', name: 'Геозона'},
+                ], 
+                tabActive: 'common-info',
+                scroll(){
+                    document.getElementById('scroll2').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    })
+                }
+            }">
+
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-4">
+                    <template x-for="func2 in functions">
+                        <button 
+                            type="button"
+                            class="cursor-pointer rounded-lg p-4 text-center transition-all duration-300 text-sm lg:text-base"
+                            x-bind:class="tabActive === func2.id ? 'bg-accent-500 text-white' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'"
+                            x-on:click="tabActive = func2.id; scroll()"
+                        >
+                            <div class="font-bold" x-text="func2.name"></div>
+                        </button>
+                    </template>
+                </div>
+
+                <div class="pt-14" id="scroll2">
+                    <h3 class="mb-7 text-center text-xl font-bold sm:text-2xl md:mb-14 md:text-4xl" x-text="functions.find(func2 => func2.id === tabActive).name"></h3>
+                </div>
+
+                <div class="mb-10 md:mb-14" x-show="tabActive === 'common-info'">
+                    <div class="flex flex-col items-center gap-8 md:flex-row md:items-center md:justify-center">
+                        <div class="flex-1 max-w-md md:text-left text-center">
+                            <p class="text-lg md:text-xl leading-relaxed">Проверьте ключевые индикаторы: пробег, уровень топлива, давление и температуру в шинах, статус дверей, окон, люка, освещения и оборудования в салоне.</p>
+                        </div>
+                        <div class="relative inline-block" style="width: 303px; height: 612px;">
+                            <img 
+                                src="https://cdn.alexsab.ru/pages/wey/remote-control/phone_mockup.webp" 
+                                alt="Phone mockup" 
+                                class="absolute inset-0 z-10 h-full w-full pointer-events-none"
+                            />
+                            <video 
+                                autoplay 
+                                loop 
+                                muted 
+                                playsinline
+                                class="absolute left-[15px] top-[12px] h-[587.52px] w-[272.7px] rounded-[20px] object-cover"
+                            >
+                                <source src="https://gwm-wey.ru/uploads/blocks/191ff0e6c588ecba4612b16d71e173fc.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10 md:mb-14" x-show="tabActive === 'lock-status'">
+                    <div class="flex flex-col items-center gap-8 md:flex-row md:items-center md:justify-center">
+                        <div class="flex-1 max-w-md md:text-left text-center">
+                            <p class="text-lg md:text-xl leading-relaxed">Проверьте заблокированы ли замки дверей автомобиля, просто открыв главный экран приложения.</p>
+                        </div>
+                        <div class="relative inline-block" style="width: 303px; height: 612px;">
+                            <img 
+                                src="https://cdn.alexsab.ru/pages/wey/remote-control/phone_mockup.webp" 
+                                alt="Phone mockup" 
+                                class="absolute inset-0 z-10 h-full w-full pointer-events-none"
+                            />
+                            <video 
+                                autoplay 
+                                loop 
+                                muted 
+                                playsinline
+                                class="absolute left-[15px] top-[12px] h-[587.52px] w-[272.7px] rounded-[20px] object-cover"
+                            >
+                                <source src="https://gwm-wey.ru/uploads/blocks/56a04654a8b8b509db38d8e464f98cb0.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10 md:mb-14" x-show="tabActive === 'car-placement'">
+                    <div class="flex flex-col items-center gap-8 md:flex-row md:items-center md:justify-center">
+                        <div class="flex-1 max-w-md md:text-left text-center">
+                            <p class="text-lg md:text-xl leading-relaxed">Отслеживайте местоположение автомобиль в реальном времени и найдите его с помощью световых и звуковых сигналов, если он рядом.</p>
+                        </div>
+                        <div class="relative inline-block" style="width: 303px; height: 612px;">
+                            <img 
+                                src="https://cdn.alexsab.ru/pages/wey/remote-control/phone_mockup.webp" 
+                                alt="Phone mockup" 
+                                class="absolute inset-0 z-10 h-full w-full pointer-events-none"
+                            />
+                            <video 
+                                autoplay 
+                                loop 
+                                muted 
+                                playsinline
+                                class="absolute left-[15px] top-[12px] h-[587.52px] w-[272.7px] rounded-[20px] object-cover"
+                            >
+                                <source src="https://gwm-wey.ru/uploads/blocks/e29b8b4761400c089ab2a67aaa9ce2bd.mp4" type="video/mp4">
+                                Ваш браузер не поддерживает видео.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-10 md:mb-14" x-show="tabActive === 'geozone'">
+                    <div class="flex flex-col items-center gap-8 md:flex-row md:items-center md:justify-center">
+                        <div class="flex-1 max-w-md md:text-left text-center">
+                            <p class="text-lg md:text-xl leading-relaxed">Установите географическую зону с радиусом от 1 до 500 км. Как только автомобиль покинет ее, Вам придет оповещение.</p>
+                        </div>
+                        <div class="relative inline-block" style="width: 303px; height: 612px;">
+                            <img 
+                                src="https://cdn.alexsab.ru/pages/wey/remote-control/phone_mockup.webp" 
+                                alt="Phone mockup" 
+                                class="absolute inset-0 z-10 h-full w-full pointer-events-none"
+                            />
+                            <video 
+                                autoplay 
+                                loop 
+                                muted 
+                                playsinline
+                                class="absolute left-[15px] top-[12px] h-[587.52px] w-[272.7px] rounded-[20px] object-cover"
+                            >
+                                <source src="https://gwm-wey.ru/uploads/blocks/8d4ad7c787313f70caa19eb99d757360.mp4" type="video/mp4">
                                 Ваш браузер не поддерживает видео.
                             </video>
                         </div>
